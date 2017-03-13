@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<link href="css/kanban.css" rel="stylesheet">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+   <div class="kanban row">
+
+
+   <div class="kanban-col panel panel-primary">
+      <div class="panel-heading clearfix">
+         Backlog
+         <i class="fa fa-plus pull-right"></i>
+      </div>
+      <div class="panel-heading">
+         <textarea rows="4"></textarea>
+         <button type="button" class="btn btn-default btn-sm">add</button>
+      </div>
+      <div class="panel-body">
+         <div id="backlog" class="kanban-centered">
+
+            <article class="kanban-entry grab" id="item2" draggable="true">
+               <div class="kanban-entry-inner">
+                  <div class="kanban-label">
+                     <h2>
+                        <a href="#">Lorem ipsum</a>
+                     </h2>
+                     <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipiscing elit.</p>
+                  </div>
+               </div>
+            </article>
+
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="kanban-col panel panel-primary">
+      <div class="panel-heading clearfix">
+         In Progress
+         <i class="fa fa-plus pull-right"></i>
+      </div>
+      <div class="panel-body">
+         <div id="progress" class="kanban-centered">
+
+            <article class="kanban-entry grab" id="item1" draggable="true">
+               <div class="kanban-entry-inner">
+                  <div class="kanban-label">
+                     <i class="fa fa-plus pull-right"></i>
+                     <i class="fa fa-plus pull-right"></i>
+                     <i class="fa fa-plus pull-right"></i>
+                     <h2>
+                        <a href="#">Aenean cursus</a>
+                     </h2>
+                     <img src="http://placehold.it/400x300.png" class="img-responsive full-width">
+                     <p>Aenean cursus molestie purus, sit amet consectetur ante tempus id. Aliquam lacinia eu elit eget imperdiet. Ut faucibus risus lectus, vel aliquam magna molestie vitae. Nulla rhoncus ipsum urna, vel dictum elit sagittis nec. Vivamus ultrices risus et magna vestibulum, eu malesuada nulla euismod. Aliquam laoreet varius metus sit amet pharetra.</p>
+                  </div>
+               </div>
+            </article>
+
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="kanban-col panel panel-primary">
+      <div class="panel-heading clearfix">
+         Quality Assurance
+         <i class="fa fa-plus pull-right"></i>
+      </div>
+      <div class="panel-body">
+         <div id="testing" class="kanban-centered">
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="kanban-col panel panel-primary">
+      <div class="panel-heading clearfix">
+         Done
+         <i class="fa fa-plus pull-right"></i>
+      </div>
+      <div class="panel-body">
+         <div id="done" class="kanban-centered">
+         </div>
+      </div>
+   </div>
+
+   </div>
+</div>
+
+<script type="text/javascript" src="js/kanban.js"></script>
+
+</body>

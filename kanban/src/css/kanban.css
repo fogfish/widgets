@@ -1,0 +1,232 @@
+* { padding: 0; margin: 0; }
+
+html
+{
+   height: 100%;
+}
+
+body 
+{
+   height: 100vh;
+   -webkit-user-select: none; /* Chrome/Safari */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* IE10+ */
+   /* Rules below not implemented in browsers yet */
+   -o-user-select: none;
+   user-select: none;
+}
+
+
+.kanban
+{
+   display: block;
+   margin: 10px;
+}
+
+.kanban-col
+{
+   float: left;
+   width: 300px;
+}
+
+.kanban-col .panel-heading,
+.kanban-col .panel-heading i
+{
+   line-height: 32px;
+}
+
+
+.kanban-col .panel-body
+{
+   height: 90vh;
+   padding: 15px 0 0 0;
+   overflow-y: auto;
+}
+
+
+.kanban-col .panel-heading textarea,
+.kanban-col .panel-heading button
+{
+   width: 100%;
+}
+
+.kanban-col .panel-heading textarea
+{
+   font-size: 12px;
+   line-height: 16px;
+   font-weight: normal;
+}
+
+.kanban-centered 
+{
+   position: relative;
+}
+
+.kanban-centered:before,
+.kanban-centered:after 
+{
+   content: " ";
+   display: table;
+}
+
+.kanban-centered:after 
+{
+   clear: both;
+}
+
+.kanban-entry 
+{
+   position: relative;
+   margin: 10px 8px;
+   clear: both;
+}
+
+/** label **/
+.kanban-entry .kanban-entry-inner .kanban-label 
+{
+   position: relative;
+   background: #f5f5f6;
+   padding: 0.75em;
+   -webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-label h2,
+.kanban-entry .kanban-entry-inner .kanban-label p 
+{
+   color: #737881;
+   font-size: 12px;
+   margin: 0;
+   line-height: 1.428571429;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-label p + p 
+{
+   margin-top: 15px;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-label h2 
+{
+   font-size: 16px;
+   margin-bottom: 10px;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-label h2 a 
+{
+   color: #303641;
+}
+
+/** icon **/
+.kanban-entry .kanban-entry-inner .kanban-icon 
+{
+   background: #fff;
+   color: #737881;
+   display: block;
+   width: 25px;
+   height: 25px;
+   -webkit-background-clip: padding-box;
+   -moz-background-clip: padding;
+   background-clip: padding-box;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-align: center;
+   -moz-box-shadow: 0 0 0 4px #f5f5f6;
+   -webkit-box-shadow: 0 0 0 4px #f5f5f6;
+   box-shadow: 0 0 0 4px #f5f5f6;
+   float: left;
+   margin-top: 6px;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-icon.bg-primary 
+{
+   background-color: #303641;
+   color: #fff;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-icon.bg-secondary 
+{
+   background-color: #ee4749;
+   color: #fff;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-icon.bg-success 
+{
+   background-color: #00a651;
+   color: #fff;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-icon.bg-info 
+{
+  background-color: #21a9e1;
+  color: #fff;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-icon.bg-warning {
+   background-color: #fad839;
+   color: #fff;
+}
+
+.kanban-entry .kanban-entry-inner .kanban-icon.bg-danger {
+   background-color: #cc2424;
+   color: #fff;
+}
+
+
+.kanban-entry .kanban-entry-inner img 
+{
+   vertical-align: middle;
+}
+
+.kanban-entry .kanban-entry-inner .img-responsive 
+{
+   display: block;
+   height: auto;
+   max-width: 100%;
+}
+
+
+/** theme **/
+.kanban-col:first-child
+{
+   border: none;
+}
+
+.kanban-col
+{
+   border: none;
+   border-radius: 0px;
+   border-left: 1px solid #eee;
+}
+
+.kanban-col .panel-heading
+{
+   border: none;
+   border-radius: 0px;
+   background: #eee;
+   color: #000;
+   font-weight: bold;
+}
+
+.kanban-entry
+{
+   -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+   -moz-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+   box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.5);
+}
+
+.grab
+{
+   cursor: -moz-grab;
+   cursor: -webkit-grab;
+}
+
+.grabbing 
+{
+   cursor: -moz-grabbing;
+   cursor: -webkit-grabbing;
+}
